@@ -3,4 +3,262 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="29dp"
+        android:text="COMPONENTES"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="410dp"
+        android:layout_height="531dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="#3D5AFE"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cpu" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="31dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginBottom="49dp"
+            android:text="CPU"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="#3D5AFE"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/text_view2"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/powersupply" />
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:layout_width="78dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="48dp"
+            android:text="Ventilador"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@+id/text_view3"
+            app:layout_constraintHorizontal_bias="0.985"
+            app:layout_constraintStart_toEndOf="@+id/text_view"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="#3D5AFE"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/text_view3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/motherboard" />
+
+        <TextView
+            android:id="@+id/text_view3"
+            android:layout_width="80dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="37dp"
+            android:text="Tarjeta Madre"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="49dp"
+            android:backgroundTint="#3D5AFE"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view"
+            app:srcCompat="@drawable/memory" />
+
+        <TextView
+            android:id="@+id/text_view4"
+            android:layout_width="46dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="65dp"
+            android:text="RAM"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="#3D5AFE"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/text_view5"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+            app:layout_constraintStart_toEndOf="@+id/imageButton4"
+            app:layout_constraintTop_toBottomOf="@+id/text_view2"
+            app:srcCompat="@drawable/ssd" />
+
+        <TextView
+            android:id="@+id/text_view5"
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:text="SSD"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/text_view6"
+            app:layout_constraintHorizontal_bias="0.588"
+            app:layout_constraintStart_toEndOf="@+id/text_view4"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="#3D5AFE"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/text_view6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view3"
+            app:srcCompat="@drawable/videocard" />
+
+        <TextView
+            android:id="@+id/text_view6"
+            android:layout_width="102dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="25dp"
+            android:text="Tarjeta grafica"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="78dp"
+            android:backgroundTint="#3D5AFE"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/text_view7"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view4"
+            app:srcCompat="@drawable/powersupply" />
+
+        <TextView
+            android:id="@+id/text_view7"
+            android:layout_width="83dp"
+            android:layout_height="41dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginBottom="27dp"
+            android:text="Fuente de poder"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="66dp"
+            android:backgroundTint="#3D5AFE"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/text_view8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view6"
+            app:srcCompat="@drawable/cases" />
+
+        <TextView
+            android:id="@+id/text_view8"
+            android:layout_width="64dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="107dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="47dp"
+            android:text="Cajas PC"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_view7"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

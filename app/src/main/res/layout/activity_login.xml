@@ -3,125 +3,93 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="123dp"
-        android:layout_height="122dp"
-        app:srcCompat="@android:mipmap/sym_def_app_icon"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="105dp" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="364dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="156dp"
-        android:clickable="true"
-        android:fontFamily="sans-serif"
-        android:text="olvide mi contraseña"
-        android:textAlignment="viewEnd"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#2196F3"
-        android:textSize="14sp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tu correo"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLayout"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tu contraseña"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTint="#FFEA00"
+        android:text="Iniciar sesion"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="¿No estas resgistrado aun?, Registrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="364dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="29dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Iniciar sesion"
+        android:layout_width="312dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="58dp"
+        android:background="#FFEA00"
+        android:text="BIENVENIDO, INICIA SESION PARA CONTINUAR"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="364dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="29dp"
-        android:backgroundTint="#9C27B0"
-        android:text="Iniciar sesion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="410dp" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="364dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="29dp"
-        android:backgroundTint="#E91E1E"
-        android:text="¿Necesitas una cuenta?"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="476dp" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="364dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="29dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Correo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="364dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="29dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Contraseña"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="364dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="29dp"
-        android:backgroundTint="#20A511"
-        android:text="Continuar con Google"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="634dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
