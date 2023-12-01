@@ -32,7 +32,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/cpu"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="35dp"
@@ -56,12 +56,12 @@
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+            app:layout_constraintBottom_toTopOf="@+id/ram"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+            app:layout_constraintTop_toBottomOf="@+id/cpu" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/cooler"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="20dp"
@@ -71,8 +71,8 @@
             android:backgroundTint="#3D5AFE"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toTopOf="@+id/text_view2"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintEnd_toStartOf="@+id/motherboard"
+            app:layout_constraintStart_toEndOf="@+id/cpu"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/powersupply" />
 
@@ -89,10 +89,10 @@
             app:layout_constraintEnd_toStartOf="@+id/text_view3"
             app:layout_constraintHorizontal_bias="0.985"
             app:layout_constraintStart_toEndOf="@+id/text_view"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+            app:layout_constraintTop_toBottomOf="@+id/cooler" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/motherboard"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="31dp"
@@ -116,10 +116,10 @@
             android:textColor="@android:color/black"
             android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+            app:layout_constraintTop_toBottomOf="@+id/motherboard" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/ram"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="35dp"
@@ -141,10 +141,10 @@
             android:textColor="@android:color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+            app:layout_constraintTop_toBottomOf="@+id/ram" />
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/ssd"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="20dp"
@@ -153,8 +153,8 @@
             android:backgroundTint="#3D5AFE"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toTopOf="@+id/text_view5"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton6"
-            app:layout_constraintStart_toEndOf="@+id/imageButton4"
+            app:layout_constraintEnd_toStartOf="@+id/videocard"
+            app:layout_constraintStart_toEndOf="@+id/ram"
             app:layout_constraintTop_toBottomOf="@+id/text_view2"
             app:srcCompat="@drawable/ssd" />
 
@@ -170,10 +170,10 @@
             app:layout_constraintEnd_toStartOf="@+id/text_view6"
             app:layout_constraintHorizontal_bias="0.588"
             app:layout_constraintStart_toEndOf="@+id/text_view4"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+            app:layout_constraintTop_toBottomOf="@+id/ssd" />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/videocard"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="30dp"
@@ -197,10 +197,10 @@
             android:textColor="@android:color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+            app:layout_constraintTop_toBottomOf="@+id/videocard" />
 
         <ImageButton
-            android:id="@+id/imageButton7"
+            android:id="@+id/FuentePoder"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="66dp"
@@ -208,14 +208,14 @@
             android:layout_marginEnd="78dp"
             android:backgroundTint="#3D5AFE"
             android:scaleType="centerCrop"
-            app:layout_constraintBottom_toTopOf="@+id/text_view7"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+            app:layout_constraintBottom_toTopOf="@+id/Text"
+            app:layout_constraintEnd_toStartOf="@+id/cases"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view4"
             app:srcCompat="@drawable/powersupply" />
 
         <TextView
-            android:id="@+id/text_view7"
+            android:id="@+id/Text"
             android:layout_width="83dp"
             android:layout_height="41dp"
             android:layout_centerInParent="true"
@@ -227,10 +227,10 @@
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+            app:layout_constraintTop_toBottomOf="@+id/FuentePoder" />
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/cases"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="36dp"
@@ -256,8 +256,8 @@
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/text_view7"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+            app:layout_constraintStart_toEndOf="@+id/Text"
+            app:layout_constraintTop_toBottomOf="@+id/cases" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
